@@ -26,7 +26,7 @@ function createGallery(galleryItems) {
     })
     .join('');
 }
-galleryContainer.insertAdjacentHTML('beforeend', galleryCardsSet);
+galleryList.insertAdjacentHTML('beforeend', galleryCardsSet);
 
 const lightbox = new SimpleLightbox('.gallery a', {
   caption: true,
