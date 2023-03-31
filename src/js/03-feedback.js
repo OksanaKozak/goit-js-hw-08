@@ -25,7 +25,9 @@ function reloadPage() {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  console.log({ email: email.value, message: message.value });
+
+  const {elements: {email, message }} = event.currentTarget;
+  // console.log({ email: email.value, message: message.value });
 
   if (email.value === '' || message.value === '') {
     return alert(`Будь ласка, заповніть всі обов'язкові поля.`);
